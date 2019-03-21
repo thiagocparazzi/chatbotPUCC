@@ -1,0 +1,36 @@
+body{
+    font: 12px verdana;
+    background-color: #00A7C2;
+}
+
+#fundo{
+    width: 600px;
+    min-width: 390px;
+    height: 520px;
+    background-color: #fff;
+    padding: 25px;
+    margin: 20px auto;
+    border-radius: 15px;
+}
+
+h1{
+    text-align: center;
+}
+
+.txt{
+    border-radius: 15px;
+    width: 13.5cm;
+    height: 1cm;
+}
+
+.btn{
+    border-radius: 15px;
+    background-color: #EE6A00;
+    width: 2cm;
+    height: 1cm;
+}
+
+form{
+    margin: auto;
+
+}

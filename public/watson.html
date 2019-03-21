@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/watson.css' />
     <title>watson-app</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
@@ -13,7 +14,7 @@
             // recupera mensagem digitada pelo usuário e exibe na tela
             var texto = document.chatForm.texto.value;
             chat = document.getElementById('chat');
-            chat.innerHTML += texto + "<br>";
+            chat.innerHTML += "<br>" + texto + "<br><br>";
             // cria objeto para envio para a API
             var input = {
                 text: texto,
@@ -46,11 +47,14 @@
 </head>
 
 <body>
-    <form name="chatForm" method="post">
-        <input type="text" name="texto" />
-        <input type="button" onClick="enviarMensagem();" value="Enviar">
-    </form>
-    <div id="chat"></div>
+    <h1>Chatbot da PUC-Campinas</h1>
+    <div id="fundo">
+        <div id="chat" style="width: 600px; height: 480px; overflow-y: auto;"></div>
+        <form name="chatForm" method="post">
+            <input type="text" name="texto" placeholder="Faça uma pergunta para o bot da PUC-Campinas..." class="txt"/>
+            <input type="button" onClick="enviarMensagem();" value="Enviar" class="btn">
+        </form>
+    </div>
 </body>
 
 </html>
