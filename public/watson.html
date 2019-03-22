@@ -49,11 +49,13 @@
 <body>
     <h1>Chatbot da PUC-Campinas</h1>
     <div id="fundo">
-        <div id="chat" style="width: 600px; height: 482px; overflow-y: auto;"></div>
+        <div id="limite" style="width: 600px; height: 470px; overflow-y: auto;">
+            <div id="chat"></div>
+        </div>
         <form name="chatForm" method="post">
             <input type="text" name="texto" placeholder="Faça uma pergunta para o bot da PUC-Campinas..." class="txt"/>
-            <input type="button" onClick="enviarMensagem();" value="Enviar" class="btn">
-        </form>
+            <input type="button" onClick="enviarMensagem();" value="Enviar" class="btn">          
+      </form>
     </div>
 </body>
 
